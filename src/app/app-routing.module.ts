@@ -11,6 +11,7 @@ const routes: Routes = [
    {
      //Admin tarafında, Foother - SideBar - Header comp'ları Layout'un içinde alıyoruz.
      //adminden sonra ki yönlendirmeleri de ilgili path isimlerinden ilgili modulleri yükleyip alıyoruz
+     //loadChildren => Lazy Loading yapılanması
       path: "admin", component:LayoutComponent, children:[
      //....com/admin yaptığımızda Dashboard'u çağırdığımız için loadChildren demememiz gerekir.
      { path: "", component:DashboardComponent },
